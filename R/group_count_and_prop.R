@@ -15,8 +15,8 @@
 #' group_count_and_prop(mtcars, cyl, cond = mpg > 20)
 
 group_count_and_prop <- function(.data, ..., cond) {
-  .data |> group_by(...) |>
-    summarize(n = n(),
+  .data |> dplyr::group_by(...) |>
+    dplyr::summarize(n = n(),
               count = length(which({{ cond }})),
               prop = (length(which({{ cond }}))/n())*100)
 }
