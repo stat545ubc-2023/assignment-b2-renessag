@@ -12,7 +12,7 @@ of a data frame.
 
 ## Installation
 
-You can install the development version of snapcrackleprop from
+You can install the development version of `snapcrackleprop` from
 [GitHub](https://github.com/) with:
 
 ``` r
