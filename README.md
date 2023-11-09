@@ -12,13 +12,15 @@ of a data frame.
 
 ## Installation
 
-You can install the development version of `snapcrackleprop` from
+You can install the latest version of `snapcrackleprop` from
 [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("stat545ubc-2023/snapcrackleprop")
 ```
+
+The current version of `snapcrackleprop` is 0.1.0.
 
 ## Example
 
@@ -28,8 +30,10 @@ summarize the count and proportion of observations where `mpg > 20` in
 each group by `cyl`.
 
 ``` r
-library(snapcrackleprop)
-group_count_and_prop(mtcars, cyl, cond = mpg > 20)
+library(snapcrackleprop) 
+group_count_and_prop(mtcars, # Input dataset
+                     cyl, # Input variable(s) to group by
+                     cond = mpg > 20) # Input condition(s) observations must meet 
 #> # A tibble: 3 × 4
 #>     cyl     n count  prop
 #>   <dbl> <int> <int> <dbl>

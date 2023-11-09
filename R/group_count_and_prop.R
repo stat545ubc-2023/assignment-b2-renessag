@@ -17,6 +17,6 @@
 group_count_and_prop <- function(.data, ..., cond) {
   .data |> dplyr::group_by(...) |>
     dplyr::summarize(n = n(),
-              count = length(which({{ cond }})),
-              prop = (length(which({{ cond }}))/n())*100)
+                     count = length(which({{ cond }})),
+                     prop = (length(which({{ cond }}))/n())*100)
 }
