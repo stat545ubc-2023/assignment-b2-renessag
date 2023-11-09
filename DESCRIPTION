@@ -1,6 +1,6 @@
 Package: snapcrackleprop
 Title: Count and Calculate Proportions in Group(s)
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Renessa", "Gomes", email = "rengomes@student.ubc.ca", role = c("aut", "cre"))
 Description: This is a package containing a single function that summarizes the 
