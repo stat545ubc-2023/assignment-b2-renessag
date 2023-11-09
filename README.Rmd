@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# snapcrackleprop
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of `snapcrackleprop` is to summarize the count and proportion of observations that meet one or more conditions within given group(s) of a data frame.
+
+## Installation
+
+You can install the development version of snapcrackleprop from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2023/snapcrackleprop", ref = "0.1.0")
+```
+
+## Example
+
+This is a basic example using the `base R` data set `mtcars`. The following application of `group_count_and_prop` shows you how to summarize the count and proportion of observations where `mpg > 20` in each group by `cyl`. 
+
+```{r example}
+library(snapcrackleprop)
+group_count_and_prop(mtcars, cyl, cond = mpg > 20)
+```
+
