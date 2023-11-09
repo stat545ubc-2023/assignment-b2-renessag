@@ -1,16 +1,21 @@
 Package: snapcrackleprop
-Title: What the Package Does (One Line, Title Case)
+Title: Count and Calculate Proportions in Group(s)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Renessa", "Gomes", email = "rengomes@student.ubc.ca", role = c("aut", "cre"))
+Description: This is a package containing a single function that summarizes the 
+  count and proportion of observations that meet one or more conditions within 
+  given group(s) of a data frame.
 License: MIT + file LICENSE
+URL: https://github.com/stat545ubc-2023/snapcrackleprop
+BugReports: https://github.com/stat545ubc-2023/snapcrackleprop/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     dplyr
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
