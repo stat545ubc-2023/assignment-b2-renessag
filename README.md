@@ -22,6 +22,12 @@ devtools::install_github("stat545ubc-2023/snapcrackleprop")
 
 The current version of `snapcrackleprop` is 0.1.0.
 
+## Dependencies
+
+Note that `snapcrackleprop` version 0.1.0 depends on:  
+- `dplyr`  
+- `R version >= 4.1.0`
+
 ## Example
 
 This is a basic example using the `base R` data set `mtcars`. The
